@@ -12,6 +12,11 @@ documentation generator. For more information, see:
 
 http://jashkenas.github.com/docco/
 
+*Notes about this fork*:
+
+- Instead of using comment matchers to generate sections, it just generates a section every time it hits a blank line. This way, it's a lot easier to annotate code that has very few comments because it provides more hooks for annotation than something that frequently generates just one big section would.
+- I edited `docco.js` directly instead of the source CoffeeScript file. Sorry – it's crude but I'm putting this out there in case anyone needs it.
+
 Installation:
 
   sudo npm install -g docco
